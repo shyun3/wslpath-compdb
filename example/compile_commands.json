@@ -1,0 +1,30 @@
+[
+ {
+  "directory": "D:\\projects\\example\\Bootloader\\Release",
+  "arguments": [
+   "C:\\\\Program Files (x86)\\\\toolchain\\\\gnu-toolchain\\\\bin\\\\ex-gcc.exe",
+   "-x",
+   "c",
+   "-DNDEBUG",
+   "-IC:\\Program Files (x86)\\third_party_lib\\include",
+   "-Os",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-Wall",
+   "-B",
+   "C:\\\\Program Files (x86)\\\\third_party_lib\\\\dev",
+   "-c",
+   "-std=gnu99",
+   "-MD",
+   "-MP",
+   "-MF",
+   "example.d",
+   "-MTexample.d",
+   "-MTexample.o",
+   "-o",
+   "example.o",
+   ".././example.c"
+  ],
+  "file": ".././example.c"
+ }
+]
