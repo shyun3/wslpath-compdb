@@ -13,7 +13,8 @@ The JSON database must be in "arguments" format, not "command" (see
 
 A `compile_commands.json` can be generated using [compiledb][], which can be
 installed as follows:
-```sh
+```powershell
+# PowerShell
 pip install git+https://github.com/shyun3/compiledb@support-cl-clang-cl
 ```
 This fork and branch contains fixes for some issues in the main repo, see
@@ -21,13 +22,15 @@ This fork and branch contains fixes for some issues in the main repo, see
 
 To generate the database, the following can be used when in the directory of a
 makefile:
-```sh
+```powershell
+# PowerShell
 make -Bnwk all | compiledb -f -o /path/to/compile_commands.json
 ```
 This will create a `compile_commands.json` at the specified path.
 
 Convert the JSON database using the script:
 ```sh
+# WSL
 python3 wslpath_compdb.py -i /path/to/compile_commands.json
 ```
 Note how the in-place option is used to modify the file.
