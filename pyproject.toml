@@ -1,0 +1,5 @@
+[tool.black]
+unstable = true     # To break long strings
+
+[tool.isort]
+profile = "black"
